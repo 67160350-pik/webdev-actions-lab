@@ -1,25 +1,25 @@
 :root {
-  --bg-color: #f2f6f5;
+  --bg-color: #f5f3ff;
   --card-bg: #ffffff;
-  --text-main: #1d2d2b;
-  --text-muted: #5f706d;
-  --primary: #0f766e;
-  --primary-hover: #0d655e;
-  --border-color: #e2e8f0;
-  --badge-bg: #e6f4f1;
-  --badge-border: #b2dfdb;
+  --text-main: #2e1065;
+  --text-muted: #6b21a8;
+  --primary: #7c3aed;
+  --primary-hover: #6d28d9;
+  --border-color: #e9d5ff;
+  --badge-bg: #f3e8ff;
+  --badge-border: #c084fc;
 }
 
 body.dark-mode {
   --bg-color: #0f172a;
-  --card-bg: #1e293b;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --primary: #14b8a6;
-  --primary-hover: #2dd4bf;
-  --border-color: #334155;
-  --badge-bg: #1e3a3a;
-  --badge-border: #14b8a6;
+  --card-bg: #1e1b4b;
+  --text-main: #f5f3ff;
+  --text-muted: #c084fc;
+  --primary: #a78bfa;
+  --primary-hover: #c4b5fd;
+  --border-color: #312e81;
+  --badge-bg: #2e1065;
+  --badge-border: #7c3aed;
 }
 
 * {
@@ -52,6 +52,7 @@ body {
 .nav-logo {
   font-weight: 700;
   font-size: 1rem;
+  color: var(--primary);
 }
 
 .nav-links {
@@ -64,6 +65,7 @@ body {
   text-decoration: none;
   color: var(--text-main);
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .theme-btn {
@@ -106,6 +108,7 @@ body {
   border: 1px solid var(--badge-border);
   color: var(--primary);
   font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .btn-primary {
@@ -139,6 +142,7 @@ body {
   margin-bottom: 15px;
   position: relative;
   display: inline-block;
+  color: var(--text-main);
 }
 
 .section-title::after {
@@ -148,7 +152,7 @@ body {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #f97316;
+  background-color: #a855f7;
   border-radius: 2px;
 }
 
@@ -163,7 +167,7 @@ body {
   background-color: var(--card-bg);
   border-radius: 12px;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.08);
   border: 1px solid var(--border-color);
 }
 
@@ -179,13 +183,14 @@ body {
   height: 90px;
   min-width: 90px;
   border-radius: 50%;
-  background-color: var(--primary);
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
   font-weight: bold;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
 }
 
 .about-content {
@@ -208,7 +213,7 @@ body {
 .info-table th, .contact-table th {
   text-align: left;
   color: var(--text-muted);
-  font-weight: 500;
+  font-weight: 600;
   padding: 8px 0;
   width: 30%;
 }
@@ -249,7 +254,7 @@ body {
 
 .progress {
   height: 100%;
-  background-color: var(--primary);
+  background: linear-gradient(90deg, #c084fc, #7c3aed);
   border-radius: 10px;
 }
 
@@ -257,16 +262,23 @@ body {
 .contact-table td a {
   color: var(--primary);
   text-decoration: underline;
+  font-weight: 500;
 }
 
 .copy-btn {
   background-color: var(--primary);
   color: white;
   border: none;
-  padding: 5px 12px;
-  border-radius: 4px;
+  padding: 6px 14px;
+  border-radius: 6px;
   font-size: 0.75rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.copy-btn:hover {
+  background-color: var(--primary-hover);
 }
 
 @media (max-width: 600px) {
