@@ -1,18 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Pages Lab</title>
+  <title>My Web Development Lab</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="card">
-    <My>My Web Development Lab</My Web Development Lab>
-    <p>ชื่อ: ปัญญพัฒน์ ทรงศร | รหัสนิสิต: 67160350</p>
-    <p id="status">Ready to deploy</p>
-    <button id="helloBtn">Say Hello</button>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">My Lab</div>
+    <div class="nav-links">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Development Lab</h1>
+    <p class="subtitle">ชื่อ: ปัญญาวัฒน์ ทรงศร &nbsp;|&nbsp; รหัสนิสิต: 67160350</p>
+    <div class="hero-actions">
+      <span id="status" class="status-badge">Ready to deploy</span>
+      <button id="helloBtn" class="btn-primary">Say Hello</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="card about-card">
+        <div class="avatar-circle">PT</div>
+        <div class="about-content">
+          <p class="about-desc">
+            สวัสดีครับ! ผมเป็นนิสิตที่กำลังเรียนรู้การพัฒนาเว็บไซต์ ชอบลงมือทำโปรเจกต์ใหม่ๆ และอยากสร้างหน้าเว็บที่ใช้งานง่าย และสบายตา<br>
+            หน้านี้เป็นงานแล็บ ใช้ HTML, CSS และ JavaScript แล้วนำขึ้นออนไลน์ด้วย GitHub Pages
+          </p>
+          <table class="info-table">
+            <tr>
+              <th>ชื่อ รหัสนิสิต</th>
+              <td>ปัญญาวัฒน์ ทรงศร 67160350</td>
+            </tr>
+            <tr>
+              <th>มหาวิทยาลัย</th>
+              <td>บูรพา</td>
+            </tr>
+            <tr>
+              <th>คณะ / สาขา</th>
+              <td>วิทยาการสารสนเทศ สาขา AAI</td>
+            </tr>
+            <tr>
+              <th>ความสนใจ</th>
+              <td>Web Development, AI & Automation</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="card skills-card">
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>HTML</span>
+            <span>85%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>CSS</span>
+            <span>80%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>JavaScript</span>
+            <span>65%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>Git & GitHub</span>
+            <span>60%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>การแก้ปัญหา</span>
+            <span>75%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtext">ติดต่อได้ตามช่องทางด้านล่าง</p>
+      <div class="card contact-card">
+        <table class="contact-table">
+          <tr>
+            <th>Email</th>
+            <td><a href="mailto:67160350@go.buu.ac.th">67160350@go.buu.ac.th</a></td>
+            <td><button class="copy-btn" onclick="copyText('67160350@go.buu.ac.th')">คัดลอกอีเมล</button></td>
+          </tr>
+          <tr>
+            <th>GitHub</th>
+            <td><a href="https://github.com/67160350-pik" target="_blank">github.com/67160350-pik</a></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
